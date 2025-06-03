@@ -4,6 +4,10 @@ import { Router } from "express";
 const router = Router()
 
 
+router.get("/", (_, res) => {
+    res.send("<h4>This is the First test conducted by Code First Community. Make the api request to <b>/api/2025/first</b> and start the test.</h4>")
+})
+
 
 router.get("/first", (_, res) => {
 
