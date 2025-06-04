@@ -5,14 +5,14 @@ const router = Router()
 
 
 router.get("/", (_, res) => {
-    res.send("<h4>This is the First test conducted by Code First Community. Make the api request to <b>/api/2025/first</b> and start the test.</h4>")
+    res.send("<h4>This is the First test conducted by Code First Community. Make the get api request to <b>/api/2025/first</b> and start the test.</h4>")
 })
 
 
 router.get("/first", (_, res) => {
 
     res.cookie('codefirst', "DONE_COOKIE_QUERY", )
-    res.json({ message: "It's not over yet. Find the key, value pair and add it into the parameter. Then make the post request to '/api/2025/first'.\nYou have 5 mins to find the data." })
+    res.json({ message: "It's not over yet. Find the key, value pair and add it into the query. Then make the post request to '/api/2025/first'." })
 })
 
 router.post("/first", (req, res) => {
